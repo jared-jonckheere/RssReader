@@ -28,6 +28,7 @@
     <ProjectReference Include="..\RssReaderModel\RssReaderModel.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers\api\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\" />
