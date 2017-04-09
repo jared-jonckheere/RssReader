@@ -3,46 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="wwwroot\app\**" />
-    <Content Remove="wwwroot\app\**" />
-    <EmbeddedResource Remove="wwwroot\app\**" />
-    <None Remove="wwwroot\app\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="wwwroot\rssReader\.angular-cli.json" />
-    <Content Include="wwwroot\rssReader\.editorconfig" />
-    <Content Include="wwwroot\rssReader\.gitignore" />
-    <Content Include="wwwroot\rssReader\e2e\app.e2e-spec.ts" />
-    <Content Include="wwwroot\rssReader\e2e\app.po.ts" />
-    <Content Include="wwwroot\rssReader\e2e\tsconfig.e2e.json" />
-    <Content Include="wwwroot\rssReader\karma.conf.js" />
-    <Content Include="wwwroot\rssReader\package.json" />
-    <Content Include="wwwroot\rssReader\protractor.conf.js" />
-    <Content Include="wwwroot\rssReader\README.md" />
-    <Content Include="wwwroot\rssReader\src\app\app.component.css" />
-    <Content Include="wwwroot\rssReader\src\app\app.component.html" />
-    <Content Include="wwwroot\rssReader\src\app\app.component.spec.ts" />
-    <Content Include="wwwroot\rssReader\src\app\app.component.ts" />
-    <Content Include="wwwroot\rssReader\src\app\app.module.ts" />
-    <Content Include="wwwroot\rssReader\src\assets\.gitkeep" />
-    <Content Include="wwwroot\rssReader\src\environments\environment.prod.ts" />
-    <Content Include="wwwroot\rssReader\src\environments\environment.ts" />
-    <Content Include="wwwroot\rssReader\src\favicon.ico" />
-    <Content Include="wwwroot\rssReader\src\index.html" />
-    <Content Include="wwwroot\rssReader\src\main.ts" />
-    <Content Include="wwwroot\rssReader\src\polyfills.ts" />
-    <Content Include="wwwroot\rssReader\src\styles.css" />
-    <Content Include="wwwroot\rssReader\src\test.ts" />
-    <Content Include="wwwroot\rssReader\src\tsconfig.app.json" />
-    <Content Include="wwwroot\rssReader\src\tsconfig.spec.json" />
-    <Content Include="wwwroot\rssReader\src\typings.d.ts" />
-    <Content Include="wwwroot\rssReader\tsconfig.json" />
-    <Content Include="wwwroot\rssReader\tslint.json" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
@@ -56,10 +19,18 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="rss-reader\**" />
+  </ItemGroup>
+  <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RssReaderModel\RssReaderModel.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>
